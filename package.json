@@ -1,0 +1,31 @@
+{
+  "name": "hellokt",
+  "version": "1.0.0",
+  "description": "Amazon Alexa custom skill to send KT texts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amaurer/hellokt.git"
+  },
+  "keywords": [
+    "Amazon",
+    "Alexa",
+    "Custom",
+    "Skill",
+    "Hello",
+    "Text"
+  ],
+  "author": "Andrew Maurer (maurerdotme) <git@maurer.me>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/amaurer/hellokt/issues"
+  },
+  "homepage": "https://github.com/amaurer/hellokt",
+  "dependencies": {
+    "express": "4.15.2",
+    "alexa-app": "3.2.0"
+  }
+}
