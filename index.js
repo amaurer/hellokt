@@ -4,7 +4,10 @@ var alexa = require("alexa-app");
 var PORT = process.env.PORT || 3000;
 var app = express();
 
-var alexaApp = new alexa.app("/development/alexa/hellokt/");
+var listenPath = "/alexa/hellokt/";
+if(process.env.NODE_ENV != "production") "/development" + listenPath;
+
+var alexaApp = new alexa.app(listenPath);
 
 alexaApp.express({
   expressApp: app,
